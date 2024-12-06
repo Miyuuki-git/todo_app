@@ -42,3 +42,8 @@
 ## Notes
 Certains services de monitoring (Fluentd) nécessitent des configurations supplémentaires
 Les dashboards Grafana doivent être configurés manuellement
+Ajout dans .gitinore 
+Spécifiques à l'environnement local
+Contiennent des données sensibles
+Peuvent être régénérés automatiquement
+Stockent des données persistantes des conteneurs

@@ -16,3 +16,9 @@ class Base(DeclarativeBase):
 
 
 db = SQLAlchemy(model_class=Base)
+
+# Configuration de connexion à la base de données
+def init_db(app):
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://user:password@db/todo_app'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    db.init_app(app)

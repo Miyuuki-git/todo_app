@@ -20,8 +20,9 @@ class Config(object):
 
 
 class DevelopmentConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "data.db")
+    SQLALCHEMY_DATABASE_URI = 'mysql://user:password@db/todo_app'
 
 
 class TestConfig(Config):
     pass
+
